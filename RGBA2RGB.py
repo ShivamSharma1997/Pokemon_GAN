@@ -3,6 +3,8 @@ import os
 src = "./resizedData"
 dst = "./resized_black/"
 
+os.mkdir(dst)
+
 for each in os.listdir(src):
     png = Image.open(os.path.join(src,each))
     # print each
